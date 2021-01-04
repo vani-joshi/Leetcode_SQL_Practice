@@ -1,5 +1,8 @@
 /**
-1.
+1. DIFFICULTY LEVEL : EASY  
+
+LEETCODE PROBLEM # 175. Combine Two Tables
+
 SQL Schema
 Table: Person
 
@@ -21,7 +24,7 @@ Table: Address
 | City        | varchar |
 | State       | varchar |
 +-------------+---------+
-AddressId is the primary key column for this table.
+AddressId is the primary key column for this table ..
  
 
 Write a SQL query for a report that provides the following information for each person in the Person table, regardless if there is an address for each of those people:
@@ -34,7 +37,9 @@ select P.FirstName, P.LastName, A.City, A.State from
 Person P left outer join Address A on P.PersonId = A.PersonId
 
 /**
-2.
+2. DIFFICULTY LEVEL : EASY  
+
+LEETCODE PROBLEM # 176. Second Highest Salary
 
 SQL Schema
 Write a SQL query to get the second highest salary from the Employee table.
@@ -62,6 +67,7 @@ where salary not in (select max(salary) from Employee)
 
 /**
 3. DIFFICULTY LEVEL : MEDIUM
+LEETCODE PROBLEM # 177. Nth Highest Salary
 
 Write a SQL query to get the nth highest salary from the Employee table.
 
@@ -95,6 +101,8 @@ END
 
 /**
 4. DIFFICULTY LEVEL : MEDIUM
+LEETCODE PROBLEM # 178. Rank Scores
+
 SQL Schema
 Write a SQL query to rank scores. If there is a tie between two scores, both should have the same ranking. Note that after a tie, the next ranking number should be the next consecutive integer value. In other words, there should be no "holes" between ranks.
 
